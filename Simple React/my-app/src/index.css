@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.name {
+  color: cadetblue;
+}
+
+.button {
+  background-color: cornflowerblue;
+  border: none;
+  padding: 15px;
+  border-radius: 2px;
+  color: darkblue;
+  transition: 0.5s ease-in-out;
+}
+.button:hover{
+  background-color: rgb(67, 111, 192);
+  cursor: pointer;
+}
+.skill{
+  color: pink;
+}
