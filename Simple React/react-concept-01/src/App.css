@@ -1,0 +1,15 @@
+.App {
+  text-align: center;
+}
+
+.product {
+  background-color: moccasin;
+  border-radius: 30px;
+  width: 300px;
+  margin: 0 auto;
+  height: 200px;
+  padding-top: 50px;
+}
+.container{
+  margin-top: 50px;
+}
