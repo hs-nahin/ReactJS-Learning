@@ -6,4 +6,7 @@ const multiply = (a, b) => {
     return a * b;
 }
 
-export {add, multiply};
+const total = (n, m) =>{
+    return n - m;
+}
+export {add, multiply, total};

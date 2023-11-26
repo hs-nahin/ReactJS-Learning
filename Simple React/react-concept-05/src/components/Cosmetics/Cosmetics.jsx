@@ -1,15 +1,15 @@
-import 'react';
-import add from '../../utilities/calculate';
+import {} from 'react';
+import { add } from '../../utilities/calculate';
 
 const Cosmetics = () => {
     const first = 50;
     const second = 50;
-    const total = add (first, second);
+    const totalCos = add (first, second);
     return (
         <>
         <div>
-            <p>This is Cosmetics Component</p>
-            <p>Total : {total}</p>
+            <h1>This is Cosmetics Component</h1>
+            <p>Total : {totalCos}</p>
         </div>
         </>
     );

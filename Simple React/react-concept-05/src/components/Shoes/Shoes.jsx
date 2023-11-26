@@ -9,7 +9,6 @@ const Shoes = () => {
         <div>
             <h1>This is Shoes Component</h1>
             <p>Total Shoes : {totalShoes}</p>
-            
         </div>
     );
 };
