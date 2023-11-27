@@ -1,11 +1,12 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
+import { addToDB } from '../../../utilities/fakeDB';
 
 const Device = (props) => {
     // eslint-disable-next-line react/prop-types
     const { brand, product, price } = props.device;
     const addToCart = (price) => {
-        console.log ("Price of the product is : ", price);
+        addToDB(price);
     }
     const addToCartWithParameter = () => addToCart (price);
     return (
