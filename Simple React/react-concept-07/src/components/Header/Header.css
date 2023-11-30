@@ -8,7 +8,9 @@
     padding-right: 100px;
     align-items: center;
 }
-
+nav img {
+    cursor: pointer;
+}
 nav.header a {
     text-decoration: none;
     color: aliceblue;
