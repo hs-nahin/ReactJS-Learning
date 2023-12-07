@@ -1,5 +1,6 @@
 // Shop.jsx
 import { useEffect, useState } from 'react'; // Import useEffect and useState from 'react'
+import { addToDB, getShoppingCart } from '../../utilities/fakedb.js';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product'; // Import the Product component from the specified path
 import './Shop.css'; // Import the styles from 'Shop.css'
@@ -13,9 +14,30 @@ const Shop = () => { // Define the functional component named Shop
         .then (data => setProducts(data)) // Set the 'products' state with the fetched data
     },[]); // Empty dependency array to run the effect only once
 
+    useEffect(() => {
+        const storedCart = getShoppingCart();
+        const savedCart = [];
+        // Step 1: Get ID
+        for (const id in storedCart) {
+            // Step 2: Get the Product by using ID
+            const addedProduct = products.find(product => product.id === id);
+            if (addedProduct) {
+                // Step 3: Add quantity of the Product
+                const quantity = storedCart[id];
+                addedProduct.quantity = quantity;
+                // Step 4 : Add the addedProduct to the savedCart
+                savedCart.push (addedProduct);
+            }
+            console.log ("added product", addedProduct);
+        } 
+        // Step 5 : Set the cart
+        setCart (savedCart);
+    }, [products]);    
+
     const handleAddToCart = (product) => { // Define a function 'handleAddToCart' that adds a product to the cart
         const newCart = [...cart, product]; // Create a new array with the existing cart items and the new product
         setCart(newCart); // Update the 'cart' state with the new cart array
+        addToDB(product.id)
     }
 
     return (
