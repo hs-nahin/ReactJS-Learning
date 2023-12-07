@@ -1,7 +1,8 @@
 // Shop.jsx
 import { useEffect, useState } from 'react'; // Import useEffect and useState from 'react'
-import './Shop.css'; // Import the styles from 'Shop.css'
+import Cart from '../Cart/Cart';
 import Product from '../Product/Product'; // Import the Product component from the specified path
+import './Shop.css'; // Import the styles from 'Shop.css'
 
 const Shop = () => { // Define the functional component named Shop
     const [products, setProducts] = useState([]); // Declare state variable 'products' and its setter function 'setProducts'
@@ -29,8 +30,7 @@ const Shop = () => { // Define the functional component named Shop
                 }
             </div>
             <div className="cart-container">
-                <h4>Orders</h4>
-                <p>Selected Items: {cart.length}</p> {/* Display the number of items in the cart */}
+                <Cart cart = {cart}></Cart>
             </div>
         </div>
     );
