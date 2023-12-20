@@ -1,6 +1,7 @@
 import './App.css'
 import Age from './components/Age/Age'
 import Job from './components/Job/Job.jsx'
+import Lists from './components/List/Lists/Lists.jsx'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
     <Job salary={25000} position="Junior Web Developer" company="Technext"/>
     <Job salary={75000} position="Senior Web Developer" company="EE Technologies"/>
     <Age/>
+    <Lists/>
     </>
   )
 }
