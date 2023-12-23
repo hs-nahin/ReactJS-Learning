@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "Basic Membership",
+    "price": 30,
+    "features": [
+      "Access to Gym Facilities",
+      "Basic Workout Equipment",
+      "Limited Group Classes"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Standard Membership",
+    "price": 50,
+    "features": [
+      "Full Gym Access",
+      "Variety of Workout Equipment",
+      "Unlimited Group Classes",
+      "Personal Trainer Consultation"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Premium Membership",
+    "price": 80,
+    "features": [
+      "All Facilities Access",
+      "Top-of-the-Line Equipment",
+      "Unlimited Group Classes",
+      "Personal Trainer Sessions",
+      "Access to Spa and Sauna"
+    ]
+  }
+]
