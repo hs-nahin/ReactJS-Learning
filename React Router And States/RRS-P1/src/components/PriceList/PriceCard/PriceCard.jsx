@@ -10,7 +10,7 @@ const PriceCard = ({price}) => {
                 </span>
                 <span className='text-2xl'>/month</span>
             </h2>
-            <h3 className='text-2xl text-center'>{price.name}</h3>
+            <h3 className='text-2xl text-center hover:text-rose-600 ease-in-out duration-300'>{price.name}</h3>
             <p className='text-start mt-5'>Features:</p>
             {
                 price.features.map((feature, idx) => <Feature

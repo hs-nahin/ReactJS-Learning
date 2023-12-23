@@ -46,7 +46,7 @@ const Navbar = () => {
               
               
               </div>
-                <ul className={`pl-14 pr-5 pb-5 pt-5 md:flex absolute md:static duration-500 bg-blue-200 ${open ? 'left-0' : '-left-60'}`}>
+                <ul className={`pl-14 pr-5 pb-5 pt-5 md:flex absolute md:static duration-500 bg-blue-100 ${open ? 'left-0' : '-left-60'}`}>
                     {
                         routes.map(route => <Links 
                           key={route.id}
