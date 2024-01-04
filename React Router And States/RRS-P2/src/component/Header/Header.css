@@ -1,0 +1,11 @@
+nav a {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(35, 204, 111);
+  text-decoration: none;
+  margin-right: 10px;
+  transition: 0.5s ease-in-out;
+}
+nav a:hover {
+  color: rgb(219, 77, 72);
+}

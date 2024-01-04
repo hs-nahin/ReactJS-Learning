@@ -1,0 +1,8 @@
+.friendDetail {
+  font-family: "Courier New", Courier, monospace;
+  border: 1px solid rgb(35, 204, 111);
+  color: rgb(35, 91, 204);
+  text-align: center;
+  width: 500px;
+  margin-bottom: 20px;
+}
