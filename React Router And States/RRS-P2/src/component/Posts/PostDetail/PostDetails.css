@@ -4,5 +4,22 @@
   color: rgb(35, 91, 204);
   text-align: center;
   width: 600px;
+  height: 250px;
   margin-bottom: 20px;
+}
+.post-detail span {
+  color: brown;
+}
+
+.post-detail button {
+  border: none;
+  background-color: rgb(35, 204, 111);
+  color: aliceblue;
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.post-detail button:hover {
+  background-color: brown;
 }
