@@ -1,18 +1,18 @@
 // App.jsx
-import React from 'react'; // Import the React module from 'react'
+import React from 'react';
 
-import './App.css'; // Import the styles from the 'App.css' file
-import Header from './components/Header/Header'; // Import the Header component from the specified path
-import Shop from './components/Shop/Shop'; // Import the Shop component from the specified path
+import './App.css';
+import Header from './components/Header/Header';
+import Shop from './components/Shop/Shop';
 
-function App() { // Define the functional component named App
+function App() {
 
   return (
     <>
-      <Header></Header> {/* Render the Header component */}
-      <Shop></Shop> {/* Render the Shop component */}
+      <Header></Header>
+      <Shop></Shop>
     </>
   )
 }
 
-export default App // Export the App component as the default export
+export default App
