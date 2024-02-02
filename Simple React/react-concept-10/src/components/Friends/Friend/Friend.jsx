@@ -2,9 +2,11 @@ import React from 'react';
 
 const Friend = (props) => {
     return (
-        <div>
-            <li>{props.name}</li>
-        </div>
+        <>
+            <div>
+                <li> Close Friend : {props.name}</li>
+            </div>
+        </>
     );
 };
 
