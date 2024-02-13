@@ -1,0 +1,23 @@
+.t-shirt {
+  border: 1px solid tomato;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+.t-shirt img {
+  height: 250px;
+}
+.t-shirt button {
+  background-color: tomato;
+  border: none;
+  width: 100px;
+  height: 30px;
+  border-radius: 2px;
+  color: rgb(114, 21, 4);
+  margin-bottom: 15px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.t-shirt button:hover {
+  background-color: rgb(243, 52, 19);
+  color: rgb(250, 150, 132);
+}
