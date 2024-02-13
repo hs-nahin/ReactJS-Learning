@@ -1,0 +1,16 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav a {
+  text-decoration: none;
+  color: rgb(89, 89, 251);
+  margin-right: 10px;
+  transition: 0.2s ease-in-out;
+}
+nav a:hover {
+  color: rgb(229, 65, 65);
+}
+.nav-container {
+  text-align: center;
+  margin-top: 5%;
+}
