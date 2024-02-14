@@ -1,3 +1,6 @@
+.product-list {
+  color: tomato;
+}
 button {
   width: 40px;
   border: none;
@@ -10,4 +13,23 @@ button {
 }
 button:hover {
   background-color: rgba(255, 99, 71, 0.716);
+}
+.tomato {
+  background-color: tomato;
+  color: aliceblue;
+  width: 200px;
+  padding-top: 10px;
+  margin: 0 auto;
+  height: 30px;
+}
+.blue {
+  background-color: rgb(89, 89, 251);
+  color: aliceblue;
+  width: 200px;
+  padding-top: 10px;
+  margin: 0 auto;
+  height: 30px;
+}
+.text-color {
+  color: rgb(255, 193, 182);
 }
