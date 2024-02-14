@@ -3,9 +3,14 @@ import './Cart.css';
 
 
 const Cart = ({cart, handleRemoveFromCart}) => {
+    let message;
+    if (cart.length === 0){
+        message = <p>Please add product</p>
+    }
     return (
         <div>
-            <h1>Order Summary: {cart.length}</h1>
+            <h1>Order Item List: {cart.length}</h1>
+            {message}
             {
                 cart.map(tshirt => <p 
                     key={tshirt._id}>
@@ -17,4 +22,8 @@ const Cart = ({cart, handleRemoveFromCart}) => {
     );
 };
 
+
+/*
+* Conditional Rendering
+*/
 export default Cart;
