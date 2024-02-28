@@ -9,7 +9,7 @@ import './index.css';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: <div className='text-blue-500'>Hello world!</div>,
   },
 ]);
 
