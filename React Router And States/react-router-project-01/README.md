@@ -1,8 +1,22 @@
-# React + Vite
+# React Router Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React Router project using `Tailwind CSS`, and `React Router`.
 
-Currently, two official plugins are available:
+**Live Site**: [React Router Project]()
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
+
+To run this project locally:
+
+1. Clone this repository.
+2. Navigate to the project directory.
+3. Install dependencies using `npm install`.
+4. Start the development server using `npm run dev`.
+5. Open your browser and visit `http://localhost:3000`.
+
+Feel free to reach out to me.
+Gmail : [hs.nahin430@gmail.com]
+Linkedin : [https://www.linkedin.com/in/hs-nahin/]
+
+**Hasnat Shahriyar**
+Happy coding!

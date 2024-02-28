@@ -8,10 +8,10 @@ import './index.css';
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <div className='text-blue-500'>Hello world!</div>,
-  },
-]);
+    path: '/',
+    
+  }
+])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
