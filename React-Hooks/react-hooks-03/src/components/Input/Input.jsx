@@ -1,32 +1,38 @@
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 
 const Input = () => {
     const [input, setInput] = useState('');
     const [submit, setSubmit] = useState('');
-    const renderCount = useRef(0);
+    const [warningMessage, setWarningMessage] = useState(null);
 
-    useEffect(() => {
-        renderCount.current = renderCount.current + 1;
-        console.log('useEffect called, renderCount:', renderCount.current);
-    }, [input]);
+
+
 
     const handleInput = (event) => {
         const value = event.target.value;
         setInput(value);
+        if (value.includes('nahin')) {
+            setWarningMessage('You cannot enter this name');
+        } else {
+            setWarningMessage(null);
+        }
     };
 
     const handleSubmit = () => {
         setSubmit(input);
     };
 
-    console.log('Component rendered, renderCount:', renderCount.current);
 
     return (
         <div>
             <input type="text" onChange={handleInput} value={input} />
             <button onClick={handleSubmit} type="submit">Submit</button>
+            {/* {warningMessage && <p style={{ color: 'red' }}>{warningMessage}</p>} */}
+            {/* {warningMessage !== null ? (
+                <p style={{ color: 'red' }}>{warningMessage}</p>
+            ) : null} */}
+            <p style={warningMessage ? { color: 'red' } : {}}>{warningMessage || 'Good Choice'}</p>
             <h1>{submit}</h1>
-            <h1>Render Count: {renderCount.current}</h1>
         </div>
     );
 }
