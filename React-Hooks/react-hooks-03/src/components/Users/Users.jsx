@@ -7,7 +7,7 @@ const Users = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch('https://jsonplaceholder.typicode.com/users'); // corrected URL
+                const response = await fetch('https://jsonplaceholder.typicode.com/users');
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
@@ -23,7 +23,7 @@ const Users = () => {
     
     return (
         <div>
-            {error && <p>{`Error fetching data: ${error}`}</p>}
+            {error && <p style={{color: 'red'}}>{`Error fetching data: ${error}`}</p>}
             <h1>{users.length}</h1>
             <ul>
                 {users.map(user => (
