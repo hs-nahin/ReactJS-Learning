@@ -1,12 +1,20 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 
 const SubmitForm = () => {
-  const [text, setText] = useState("Hello");
+  const [text, setText] = useState("");
   const [submit, setSubmit] = useState(false);
+  const passwordRef = useRef(null);
+  const [error, setError] = useState('');
 
   const submitForm = (event) => {
     event.preventDefault();
     setSubmit(true);
+
+    if (passwordRef.current.value.length < 8) {
+        setError("Password must be atleast 8 characters!")
+    } else {
+        setError('')
+    }
   };
 
   const nameText = (e) => {
@@ -29,9 +37,10 @@ const SubmitForm = () => {
         <br />
         <input
           type="password"
+          ref={passwordRef}
           placeholder="Enter Your Password"
           name="password"
-        />
+        /> <p style={{color: 'red'}}>{error}</p>
         <br />
         <input type="submit" value="Sign Up" />
       </form>
