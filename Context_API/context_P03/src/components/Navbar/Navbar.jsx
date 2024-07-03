@@ -1,14 +1,16 @@
-/* eslint-disable react/prop-types */
-import 'react';
-import NavInside from '../NavInside/NavInside';
+import "react";
+import { useContext } from "react";
+import { CountContext } from "../../App";
+import NavInside from "../NavInside/NavInside";
 
-const Navbar = ({count}) => {
-    return (
-        <div>
-            <button>Navbar Count {count}</button>
-            <NavInside count={count}/>
-        </div>
-    );
+const Navbar = () => {
+  const countState = useContext(CountContext);
+  return (
+    <div>
+      <button>Navbar Count {countState}</button>
+      <NavInside />
+    </div>
+  );
 };
 
 export default Navbar;

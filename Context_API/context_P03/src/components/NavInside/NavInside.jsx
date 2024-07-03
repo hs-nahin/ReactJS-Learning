@@ -1,11 +1,13 @@
-/* eslint-disable react/prop-types */
 import 'react';
+import { useContext } from 'react';
+import { CountContext } from '../../App';
 
 
-const NavInside = ({count}) => {
+const NavInside = () => {
+    const countState = useContext(CountContext);
     return (
         <div>
-            <button>NavInside {count}</button>
+            <button>NavInside {countState}</button>
         </div>
     );
 };
