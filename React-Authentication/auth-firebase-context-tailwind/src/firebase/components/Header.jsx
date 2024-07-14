@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <div>
-            <div className="navbar bg-base-300">
-                <button className="btn btn-ghost text-xl">daisyUI</button>
+            <div className="navbar bg-primary text-primary-content">
+                <button className="btn btn-ghost text-xl">Auth Master</button>
                 <Link className="btn btn-ghost text-xl" to='/'>Home</Link>
                 <Link className="btn btn-ghost text-xl" to='/login'>Login</Link>
                 <Link className="btn btn-ghost text-xl" to='/register'>Register</Link>
