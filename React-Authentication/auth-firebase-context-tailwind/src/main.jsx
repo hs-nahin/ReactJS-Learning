@@ -3,6 +3,8 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./firebase/components/Home";
 import Login from "./firebase/components/Login";
+import Orders from "./firebase/components/Orders";
+import PrivateRoute from "./firebase/components/PrivateRoute/PrivateRoute";
 import Register from "./firebase/components/Register";
 import Main from "./firebase/Main";
 import "./index.css";
@@ -24,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register />,
+      },
+      {
+        path: "/orders",
+        element: <PrivateRoute> <Orders/> </PrivateRoute>,
       },
     ],
   },
