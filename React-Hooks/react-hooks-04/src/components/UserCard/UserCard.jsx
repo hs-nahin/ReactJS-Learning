@@ -1,12 +1,17 @@
+// ✅ This is a reusable component receiving props
 const UserCard = ({ user }) => {
+  const { name, username, email, address } = user;
+
   return (
-    <div className="mb-4 p-4 shadow-md border rounded bg-white">
-      <h2 className="text-xl font-bold">{user.name}</h2>
-      <p><strong>Username:</strong> {user.username}</p>
-      <p><strong>Email:</strong> {user.email}</p>
-      <p><strong>Address:</strong> {user.address.street}, {user.address.city}</p>
+    <div className="border border-gray-300 rounded p-4 shadow-md">
+      <h2 className="text-xl font-semibold">{name}</h2>
+      <p className="text-gray-600">@{username}</p>
+      <p className="text-sm">{email}</p>
+      <p className="text-sm">
+        {address.street}, {address.city}
+      </p>
     </div>
   );
-}
+};
 
 export default UserCard;
